@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Haikyo.com</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body id='<%= "#{controller.controller_name}" %>'>
+    <header>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div id="footer">
+      <div class="box">
+        <%= link_to(posts_index_path) do %>
+          <div id="red-circle-button" class="red circle">
+          </div>
+        <% end %>
+
+        <%= link_to(home_index_path) do %>
+        <div id="yellow-ciecle-button" class="yellow circle">
+        </div>
+        <% end %>
+
+        <%= link_to(home_about_path) do %>
+        <div id="white-circle-button" class="white circle">
+        </div>
+        <% end %>
+
+      </div>
+    </div>
+
+  </body>
+</html>

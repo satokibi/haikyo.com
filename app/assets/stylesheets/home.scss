@@ -1,0 +1,42 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#home {
+  background-color: black;
+  color: white;
+
+  // index.html.erb
+  .s-maru {
+    width: 88%;
+    background-color: black;
+    margin: 8px auto;
+
+    .circle {
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      margin: 4px 0px;
+      display: inline-block;
+
+      cursor: pointer;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .white {
+      background-color: white;
+    }
+  }
+
+  // about.html.erb
+  .main-about {
+    width: 400px;
+    height: 240px;
+    margin: 20px auto;
+
+  }
+
+}
