@@ -1,24 +1,26 @@
-# README
+Haikyo.com
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+「自殺サークル」, 「紀子の食卓」に出てくる
+廃墟ドットコムというサイトのコピー。
 
-Things you may want to cover:
+## Demo
 
-* Ruby version
+## Requirement
+  $ ruby -v
+  ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
 
-* System dependencies
+  $ sqlite3 --version
+  3.6.20
 
-* Configuration
+  $ rails -v
+  Rails 5.2.1
 
-* Database creation
+## Usage
+~~~$ git clone https://github.com/satokibi/haikyo.com.git~~~
 
-* Database initialization
+~~~$ cd haikyo.com~~~
 
-* How to run the test suite
+~~~$ rails s~~~
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ブラウザで`localhost:3000`にアクセス
